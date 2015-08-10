@@ -25,9 +25,17 @@ choice
 		bool "Expert"
 		select FREETZ_SHOW_ADVANCED
 		select FREETZ_SHOW_EXPERT
+
+	config FREETZ_USER_LEVEL_DEVELOPER
+		bool "Developer"
+		select FREETZ_SHOW_ADVANCED
+		select FREETZ_SHOW_EXPERT
+		select FREETZ_REAL_DEVELOPER_ONLY
 endchoice
 
 config FREETZ_SHOW_ADVANCED
 	bool
 config FREETZ_SHOW_EXPERT
+	bool
+config FREETZ_REAL_DEVELOPER_ONLY
 	bool
