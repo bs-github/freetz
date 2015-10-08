@@ -223,7 +223,7 @@ NM="${ABS_BASE_DIR}/toolchain/target/bin/${FREETZ_TARGET_CROSS}nm"
 STRIP="${ABS_BASE_DIR}/toolchain/target/bin/${FREETZ_TARGET_CROSS}strip"
 
 # Options for (un)packing SquashFS
-UNSQUASHFS_OPTIONS="-no-progress -processors 1 -exit-on-decomp-error"
+UNSQUASHFS_OPTIONS="-no-progress -processors 1"
 MKSQUASHFS_OPTIONS="-all-root -info"
 
 UNSQUASHFS="${TOOLS_DIR}/${UNSQUASHFS_TOOL}"
